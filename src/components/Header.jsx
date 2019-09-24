@@ -1,15 +1,19 @@
 import React from 'react';
+import '../assets/styles/components/Header.scss';
+
+import logo from '../assets/static/QuantumTVlogo.png';
+import userIcon from '../assets/static/UserIcon.png';
 
 const Header = () => (
   <header className='header'>
     <img
       className='header__img'
-      src='./assets/QuantumTVlogo.png'
+      src={logo}
       alt='Logo de QuantumTV'
     />
     <div className='header__menu'>
       <div className='header__menu--profile'>
-        <img src='./assets/UserIcon.png' alt='User' />
+        <img src={userIcon} alt='User' />
         <p>Perfil</p>
       </div>
       <ul>
